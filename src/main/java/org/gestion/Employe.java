@@ -6,17 +6,20 @@ public class Employe {
     private String poste;
     private double salaire;
 
-
+    // constrecteur vide
     public Employe() {
 
     }
 
+    // constrecteur vide avec les arguments
     public Employe(int id, String nom, String poste, double salaire) {
         this.id = id;
         this.nom = nom;
         this.poste = poste;
         this.salaire = salaire;
     }
+
+    // Getters & Setters
 
     public int getId() {
         return id;
@@ -50,6 +53,7 @@ public class Employe {
         this.salaire = salaire;
     }
 
+    // re-implementation de methode toString
     @Override
     public String toString() {
         return "Employe{" +
@@ -60,6 +64,7 @@ public class Employe {
                 '}';
     }
 
+    // comparer par deux employes par salaire, c'est emp1.salaire > em2.salaire donc la fonction return 1, sinon -1
     public static int compareParSalaire(Employe emp1, Employe emp2) {
         return Double.compare(emp1.getSalaire(), emp2.getSalaire());
     }
