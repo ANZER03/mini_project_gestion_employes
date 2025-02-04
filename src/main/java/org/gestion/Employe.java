@@ -11,7 +11,7 @@ public class Employe {
 
     }
 
-    // constrecteur vide avec les arguments
+    // constrecteur avec les arguments
     public Employe(int id, String nom, String poste, double salaire) {
         this.id = id;
         this.nom = nom;
